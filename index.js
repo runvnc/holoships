@@ -6,15 +6,17 @@ function addScript(base, src) {
 }
 
 function addScript2(base, src) {
-
-	
-	
+	  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = src;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();	
 }
 
 var base = 'https://raw.githubusercontent.com/mrdoob/three.js/master/';
-addScript(base, 'build/three.min.js');
-addScript(base, 'examples/js/renderers/Projector.js');
-addScript(base, 'examples/js/renderers/CanvasRenderer.js');
+addScript2(base, 'build/three.min.js');
+addScript2(base, 'examples/js/renderers/Projector.js');
+addScript2(base, 'examples/js/renderers/CanvasRenderer.js');
 
 setTimeout(function() { 
 	
