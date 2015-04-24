@@ -12,9 +12,10 @@ var container, stats;
 			init();
 			animate();
 			function init() {
-				alert(2);
+			
 				container = document.createElement( 'div' );
 				document.body.appendChild( container );
+				document.body.style.backgroundColor = '#f0f0f0';
 				var info = document.createElement( 'div' );
 				info.style.position = 'absolute';
 				info.style.top = '10px';
@@ -26,7 +27,7 @@ var container, stats;
 				camera.position.y = 150;
 				camera.position.z = 500;
 				scene = new THREE.Scene();
-				alert(3)
+				
 				// Cube
 				var geometry = new THREE.BoxGeometry( 200, 200, 200 );
 				for ( var i = 0; i < geometry.faces.length; i += 2 ) {
@@ -35,14 +36,14 @@ var container, stats;
 					geometry.faces[ i + 1 ].color.setHex( hex );
 				}
 				var material = new THREE.MeshBasicMaterial( { 
-					wireframe:true, vertexColors: THREE.FaceColors, overdraw: 0.5 } );
+					wireframe:true, vertexColors: THREE.FaceColors } );
 				cube = new THREE.Mesh( geometry, material );
 				cube.position.y = 150;
 				scene.add( cube );
 				// Plane
 				var geometry = new THREE.PlaneBufferGeometry( 200, 200 );
 				geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
-				var material = new THREE.MeshBasicMaterial( { wireframe:true,color: 0xe0e0e0, overdraw: 0.5 } );
+				var material = new THREE.MeshBasicMaterial( { wireframe:true,color: 0xe0e0e0} );
 				plane = new THREE.Mesh( geometry, material );
 				scene.add( plane );
 				renderer = new THREE.CanvasRenderer();
