@@ -1,5 +1,5 @@
 setTimeout(function() { 
-aleet(1;
+alert(1);
 var container, stats;
 			var camera, scene, renderer;
 			var cube, plane;
