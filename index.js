@@ -14,7 +14,7 @@ function addScript2(base, src) {
     po.type = 'text/javascript'; po.async = true;
     po.src = base + src + '?zz='+(new Date()).getTime();
     var s = document.getElementsByTagName('head')[0]; s.appendChild(po);
-  
+    window.alert('..');
   })();	
 }
 
