@@ -124,3 +124,4 @@ var container, stats;
 				plane.rotation.y = cube.rotation.y += ( targetRotation - cube.rotation.y ) * 0.05;
 				renderer.render( scene, camera );
 			}
+}, 1000);
