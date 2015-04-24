@@ -1,4 +1,5 @@
 function addScript(base, src) {
+	
   var script = document.createElement('script');
   script.type = 'text/javascript';
   script.src = base + src + '?zz='+(new Date()).getTime();
@@ -6,10 +7,12 @@ function addScript(base, src) {
 }
 
 function addScript2(base, src) {
+  alert('addscript2');
 	  (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
     po.src = src;
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    alert('done');
   })();	
 }
 
