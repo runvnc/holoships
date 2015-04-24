@@ -7,12 +7,12 @@ function addScript(base, src) {
 }
 
 function addScript2(base, src) {
-  
+  alert('k')
 	  (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
     po.src = src;
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
- 
+    alert('j')
   })();	
 }
 
