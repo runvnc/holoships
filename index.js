@@ -17,8 +17,8 @@ function addScript2(base, src) {
 }
 
 var base = 'https://raw.githubusercontent.com/mrdoob/three.js/master/';
-addScript(base, 'build/thkree.min.js');
-addScript(base, 'examples/js/renderers/Projecltor.js');
+addScript(base, 'build/three.min.js');
+addScript(base, 'examples/js/renderers/Projector.js');
 addScript(base, 'examples/js/renderers/CanvasRenderer.js');
 addScript('https://raw.githubusercontent.com/runvnc/holoships/master/', 'game.js');
 
