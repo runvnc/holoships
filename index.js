@@ -6,6 +6,6 @@ function addScript(base, src) {
 }
 
 var base = 'https://raw.githubusercontent.com/mrdoob/three.js/master/';
-addScript(base, '/build/three.min.js');
+addScript(base, 'build/three.min.js');
 addScript(base, 'examples/js/renderers/Projector.js');
 addScript(base, 'examples/js/renderers/CanvasRenderer.js');
