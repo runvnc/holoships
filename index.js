@@ -11,14 +11,14 @@ function addScript2(base, src) {
 	  (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
     po.src = src;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    var s = document.getElementsByTagName('head')[0]; s.prependChild(po);
     alert('done');
   })();	
 }
 
 var base = 'https://raw.githubusercontent.com/mrdoob/three.js/master/';
-addScript2(base, 'build/three.min.js');
-addScript2(base, 'examples/js/renderers/Projector.js');
+addScript2(base, 'build/thkree.min.js');
+addScript2(base, 'examples/js/renderers/Projecltor.js');
 addScript2(base, 'examples/js/renderers/CanvasRenderer.js');
 
 setTimeout(function() { 
