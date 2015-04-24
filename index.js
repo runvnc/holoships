@@ -10,8 +10,8 @@ function addScript2(base, src) {
   alert('k')
 	  (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = src;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.appendChild(po, s);
+    po.src = base + src + '?zz='+(new Date()).getTime();
+    var s = document.getElementsByTagName('head')[0]; s.appendChild(po);
     alert('j')
   })();	
 }
