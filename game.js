@@ -108,7 +108,7 @@ var container, stats;
 			function animate() {
 				requestAnimationFrame( animate );
 				render();
-				stats.update();
+				
 			}
 			function render() {
 				plane.rotation.y = cube.rotation.y += ( targetRotation - cube.rotation.y ) * 0.05;
