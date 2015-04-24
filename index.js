@@ -43,7 +43,7 @@ var container, stats;
 				info.style.width = '100%';
 				info.style.textAlign = 'center';
 				info.innerHTML = 'Drag to spin the cube';
-				container.appendChild( info );
+				//container.appendChild( info );
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000 );
 				camera.position.y = 150;
 				camera.position.z = 500;
