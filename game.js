@@ -1,5 +1,5 @@
 setTimeout(function() { 
-	
+aleet(1;
 var container, stats;
 			var camera, scene, renderer;
 			var cube, plane;
@@ -12,6 +12,7 @@ var container, stats;
 			init();
 			animate();
 			function init() {
+				alert(2);
 				container = document.createElement( 'div' );
 				document.body.appendChild( container );
 				var info = document.createElement( 'div' );
@@ -25,6 +26,7 @@ var container, stats;
 				camera.position.y = 150;
 				camera.position.z = 500;
 				scene = new THREE.Scene();
+				alert(3)
 				// Cube
 				var geometry = new THREE.BoxGeometry( 200, 200, 200 );
 				for ( var i = 0; i < geometry.faces.length; i += 2 ) {
@@ -47,11 +49,12 @@ var container, stats;
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				container.appendChild( renderer.domElement );
-				stats = new Stats();
-				stats.domElement.style.position = 'absolute';
-				stats.domElement.style.top = '0px';
-				container.appendChild( stats.domElement );
-				document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+				alert(5)
+				//stats = new Stats();
+				//stats.domElement.style.position = 'absolute';
+				//stats.domElement.style.top = '0px';
+				//container.appendChild( stats.domElement );
+			        document.addEventListener( 'mousedown', onDocumentMouseDown, false );
 				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
 				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
 				//
