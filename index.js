@@ -5,7 +5,7 @@ function addScript(base, src) {
   document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-var base = 'https://raw.githubusercontent.com/mrdoob/threejs/master/';
-addScript('build/three.min.js');
-addScript('examples/js/renderers/Projector.js');
-addScript('examples/js/renderers/CanvasRenderer.js');
+var base = 'https://raw.githubusercontent.com/mrdoob/three.js/master/';
+addScript(base, '/build/three.min.js');
+addScript(base, 'examples/js/renderers/Projector.js');
+addScript(base, 'examples/js/renderers/CanvasRenderer.js');
