@@ -7,6 +7,7 @@ function addScript(base, src) {
 }
 
 function addScript2(base, src) {
+	alert(7);
 	  (function() {
 	  	
     var po = document.createElement('script');
