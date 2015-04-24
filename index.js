@@ -11,7 +11,7 @@ addScript(base, 'build/three.min.js');
 addScript(base, 'examples/js/renderers/Projector.js');
 addScript(base, 'examples/js/renderers/CanvasRenderer.js');
 
-setTimeout(functiion() { 
+setTimeout(function() { 
 	
 var container, stats;
 			var camera, scene, renderer;
