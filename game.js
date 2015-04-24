@@ -34,7 +34,8 @@ var container, stats;
 					geometry.faces[ i ].color.setHex( hex );
 					geometry.faces[ i + 1 ].color.setHex( hex );
 				}
-				var material = new THREE.MeshBasicMaterial( { vertexColors: THREE.FaceColors, overdraw: 0.5 } );
+				var material = new THREE.MeshBasicMaterial( { 
+					wireframe:true, vertexColors: THREE.FaceColors, overdraw: 0.5 } );
 				cube = new THREE.Mesh( geometry, material );
 				cube.position.y = 150;
 				scene.add( cube );
