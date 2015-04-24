@@ -5,7 +5,7 @@ function addScript(base, src) {
   document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-scriptBase = 'https://raw.githubusercontent.com/runvnc/holoships/master/';
-addScript('three.min.js');
-addScript('Projector.js');
-addScript('CanvasRenderer.js');
+var base = 'https://raw.githubusercontent.com/mrdoob/threejs/master/';
+addScript('build/three.min.js');
+addScript('examples/js/renderers/Projector.js');
+addScript('examples/js/renderers/CanvasRenderer.js');
