@@ -8,7 +8,6 @@
       <script src="scripts/phoria-entity.js"></script>
       <script src="scripts/phoria-scene.js"></script>
       <script src="scripts/phoria-renderer.js"></script>
-      <script src='scripts/dat.gui.min.js'></script>
       <script>
 var requestAnimFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame ||
                        window.mozRequestAnimationFrame || window.msRequestAnimationFrame || 
@@ -82,32 +81,6 @@ function onloadHandler()
             break;
       }
    }, false);
-   // add GUI controls
-   var gui = new dat.GUI();
-   var f = gui.addFolder('Perspective');
-   f.add(scene.perspective, "fov").min(5).max(175);
-   f.add(scene.perspective, "near").min(1).max(100);
-   f.add(scene.perspective, "far").min(1).max(1000);
-   //f.open();
-   f = gui.addFolder('Camera LookAt');
-   f.add(scene.camera.lookat, "x").min(-100).max(100);
-   f.add(scene.camera.lookat, "y").min(-100).max(100);
-   f.add(scene.camera.lookat, "z").min(-100).max(100);
-   f.open();
-   f = gui.addFolder('Camera Position');
-   f.add(scene.camera.position, "x").min(-100).max(100);
-   f.add(scene.camera.position, "y").min(-100).max(100);
-   f.add(scene.camera.position, "z").min(-100).max(100);
-   f.open();
-   f = gui.addFolder('Camera Up');
-   f.add(scene.camera.up, "x").min(-10).max(10).step(0.1);
-   f.add(scene.camera.up, "y").min(-10).max(10).step(0.1);
-   f.add(scene.camera.up, "z").min(-10).max(10).step(0.1);
-   f = gui.addFolder('Rendering');
-   f.add(cube.style, "drawmode", ["point", "wireframe", "solid"]);
-   f.add(cube.style, "shademode", ["plain", "lightsource"]);
-   f.add(cube.style, "fillmode", ["fill", "filltwice", "inflate", "fillstroke", "hiddenline"]);
-   f.open();
    
    // start animation
    requestAnimFrame(fnAnimate);
