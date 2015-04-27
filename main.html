@@ -5,7 +5,7 @@ window.onerror = function(e) {
 }
 </script>
 <canvas id="canvas" width="768" height="512" style="background-color: #eee"></canvas>
-<script src="http://raw.githubusercontent.com/runvnc/holoships/master/scripts/phoria-min.js"></script>
+<script src="http://raw.githubusercontent.com/runvnc/holoships/master/scripts/phoria.min.js"></script>
       <script>
 var requestAnimFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame ||
                        window.mozRequestAnimationFrame || window.msRequestAnimationFrame || 
@@ -53,7 +53,7 @@ function onloadHandler()
       edges: c.edges,
       polygons: c.polygons
    });
-   //scene.graph.push(cube);
+   scene.graph.push(cube);
    scene.graph.push(new Phoria.DistantLight());
 
    var pause = false;
