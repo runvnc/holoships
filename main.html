@@ -2,10 +2,12 @@
 <head>
 <title>Test</title>
 <script>
-window.onerror = function(e) {
-  alert(e);
+window.onerror = function(e,x,y) {
+  alert(e+' '+x+' '+y);
   return true;
 }
+
+alert('device.model is ' + device.model);
 </script>
 
 <script src="https://raw.githubusercontent.com/runvnc/holoships/master/scripts/phoria.min.js"></script>
