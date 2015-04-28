@@ -1,10 +1,12 @@
+<html>
+<head>
+<title>Test</title>
 <script>
 window.onerror = function(e) {
   alert(e);
   return true;
 }
 </script>
-<canvas id="canvas" width="768" height="512" style="background-color: #eee"></canvas>
 
 <script src="scripts/gl-matrix.js"></script>
 <script src="scripts/phoria-util.js"></script>
@@ -90,4 +92,9 @@ function onloadHandler()
    requestAnimFrame(fnAnimate);
 }
       </script>
-   
+</head>
+<body>
+<canvas id="canvas" width="768" height="512" style="background-color: #eee"></canvas>
+
+</body>
+</html>
