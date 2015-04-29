@@ -3,7 +3,11 @@ var canv = document.createElement('canvas');
 canv.id = 'canvas';
 canv.width = '768px';
 canv.height = '512px';
+canv.style.width = '768px';
+canv.style.height = '512px';
+canv.style.border = '1px solid red';
 document.body.appendChild(canv);
+
 
 alert('device.model is ' + device.model);
 
