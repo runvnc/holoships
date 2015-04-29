@@ -21,7 +21,7 @@ var requestAnimFrame = window.requestAnimationFrame || window.webkitRequestAnima
 */
 
 // bind to window onload event
-window.addEventListener('load', onloadHandler, false);
+//window.addEventListener('load', onloadHandler, false);
 
 function onloadHandler()
 {
@@ -87,4 +87,6 @@ function onloadHandler()
    // start animation
    requestAnimFrame(fnAnimate);
 }
+
+setTimeout(onloadHandler, 1000);
 
