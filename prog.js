@@ -11,6 +11,7 @@ document.body.appendChild(canv);
 var requestAnimFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame ||
                        window.mozRequestAnimationFrame || window.msRequestAnimationFrame || 
                        function(c) {window.setTimeout(c, 15)};
+var requestAnimFrame = requestAnimationFrame;
 /**
    Phoria
    pho·ri·a (fôr-)
@@ -55,7 +56,7 @@ function onloadHandler()
       polygons: c.polygons
    });
    scene.graph.push(cube);
-   //scene.graph.push(new Phoria.DistantLight());
+   scene.graph.push(new Phoria.DistantLight());
 
    var pause = false;
    var fnAnimate = function() {
