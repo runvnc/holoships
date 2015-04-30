@@ -14,8 +14,8 @@ document.body.appendChild(canv);
 //var requestAnimFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame ||
 //                       window.mozRequestAnimationFrame || window.msRequestAnimationFrame ||
 
-var requestAnimFrame = function(c) {window.setTimeout(c, 15)};
-//var requestAnimFrame = requestAnimationFrame;
+//var requestAnimFrame = function(c) {window.setTimeout(c, 15)};
+var requestAnimFrame = requestAnimationFrame;
 /**
    Phoria
    pho·ri·a (fôr-)
