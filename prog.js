@@ -43,7 +43,7 @@ function onloadHandler()
       polygons: plane.polygons,
       style: {
          drawmode: "wireframe",
-         shademode: "plain",
+         fillmode: "hiddenline",
          linewidth: 0.5,
          objectsortmode: "back"
       }
@@ -52,7 +52,13 @@ function onloadHandler()
    var cube = Phoria.Entity.create({
       points: c.points,
       edges: c.edges,
-      polygons: c.polygons
+      polygons: c.polygons,
+      style: {
+         drawmode: "wireframe",
+         fillmode: "hiddenline",
+         linewidth: 0.5,
+         objectsortmode: "back"
+      } 
    });
    scene.graph.push(cube);
    scene.graph.push(new Phoria.DistantLight());
