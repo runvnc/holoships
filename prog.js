@@ -43,8 +43,8 @@ function onloadHandler()
       edges: plane.edges,
       polygons: plane.polygons,
       style: {
-         drawmode: "solid",
-         fillmode: "hiddenline",
+         drawmode: "wireframe",
+         shademode: "plain",
          linewidth: 0.5,
          objectsortmode: "back"
       }
