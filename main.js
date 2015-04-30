@@ -11,8 +11,6 @@ canv.style.height = '512px';
 canv.style.border = '1px solid red';
 document.body.appendChild(canv);
 
-alert('device.model is ' + device.model);
-
 var requestAnimFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame ||
                        window.mozRequestAnimationFrame || window.msRequestAnimationFrame || 
                        function(c) {window.setTimeout(c, 15)};
@@ -67,7 +65,7 @@ function onloadHandler()
       if (!pause)
       {
          // rotate local matrix of the cube
-         //cube.rotateY(0.5*Phoria.RADIANS);
+         cube.rotateY(0.5*Phoria.RADIANS);
          
          // execute the model view 3D pipeline and render the scene
          scene.modelView();
