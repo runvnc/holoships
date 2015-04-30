@@ -60,11 +60,10 @@ function onloadHandler()
          drawmode: "solid",
          fillmode: "hiddenline",
          linewidth: 0.5,
-         objectsortmode: "back"
       } 
    });
    scene.graph.push(cube);
-   scene.graph.push(new Phoria.DistantLight());
+   //scene.graph.push(new Phoria.DistantLight());
 
    var pause = false;
    var fnAnimate = function() {
