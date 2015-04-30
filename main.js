@@ -55,12 +55,7 @@ function onloadHandler()
    var cube = Phoria.Entity.create({
       points: c.points,
       edges: c.edges,
-      polygons: c.polygons,
-      style: {
-         drawmode: "solid",
-         fillmode: "hiddenline",
-         linewidth: 0.5,
-      } 
+      polygons: c.polygons
    });
    scene.graph.push(cube);
    //scene.graph.push(new Phoria.DistantLight());
