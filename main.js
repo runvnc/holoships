@@ -45,7 +45,7 @@ function onloadHandler()
       edges: plane.edges,
       polygons: plane.polygons,
       style: {
-         drawmode: "wireframe",
+         drawmode: "solid",
          fillmode: "hiddenline",
          linewidth: 0.5,
          objectsortmode: "back"
@@ -57,7 +57,7 @@ function onloadHandler()
       edges: c.edges,
       polygons: c.polygons,
       style: {
-         drawmode: "wireframe",
+         drawmode: "solid",
          fillmode: "hiddenline",
          linewidth: 0.5,
          objectsortmode: "back"
@@ -71,7 +71,7 @@ function onloadHandler()
       if (!pause)
       {
          // rotate local matrix of the cube
-         cube.rotateY(0.5*Phoria.RADIANS);
+         cube.rotateY(3.5*Phoria.RADIANS);
          
          // execute the model view 3D pipeline and render the scene
          scene.modelView();
